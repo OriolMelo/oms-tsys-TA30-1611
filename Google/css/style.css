@@ -1,0 +1,174 @@
+
+@font-face {     /*Recurso para obtener la fuente de google*/
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+}
+
+.material-symbols-outlined {  /*Recurso para obtener iconos de google*/
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+body{
+    margin: 0;
+    font-family: Product Sans;
+    color: rgb(49, 49, 49);
+}
+
+.head {
+    height: 6vh;
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 10px;
+    background-color: white;
+}
+
+#resources{
+    display: flex;
+}
+
+#lista{
+    margin-top: 5px;
+}
+
+#boton_inicio{
+    padding: 10px 20px;
+    color: white;
+    background-color: rgb(37, 121, 248);
+    border: none;
+    border-radius: 5px;
+}
+
+#main {
+    height: 84vh;
+    background-color: white;
+}
+
+.foot {
+    height: 10vh;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    
+    vertical-align: middle;
+}
+
+#logo{
+    height: 35vh;
+    background-color: grey;
+    background: url("../img/google_pequeño.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    display: flex;
+    align-items: flex-end;
+    justify-content:baseline;
+    padding-bottom: 10px;
+}
+
+#contenedor_barra{
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+    vertical-align: middle;
+    justify-content: center;
+    height: 7vh;
+}
+
+#barra{
+    height: 5vh;
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+    vertical-align: middle;
+    border-radius: 40px;
+    border: 1px solid rgb(224, 223, 223);
+}
+
+#botones{
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.boton{
+    margin-left: 8px;
+    margin-right: 8px;
+    padding: 6px 15px;
+    border: none;
+    border-radius: 2px;
+}
+
+#promo{
+    height: 0vh;
+    background-color: pink;
+}
+
+#idiomas{
+    height: 35vh;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    padding: 5px;
+    font-size: small;
+}
+
+a{
+    margin: 0px 5px;
+    text-decoration: none;
+    color:rgb(7, 7, 177);
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+#region{
+    display: flex;
+    height: 5vh;
+    align-items: center;
+    padding-left: 20px;
+    background-color: #eff0f3;
+    border-bottom: 1px solid rgb(211, 211, 211);
+}
+
+#about{
+    display: flex;
+    height: 5vh;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 10px;
+    background-color: #eff0f3;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+li{
+    float: left;
+    padding-right: 16px;
+    font-size: 15px;
+    vertical-align: middle;
+}
+
+.link_lista{
+    margin: 0px 5px;
+    text-decoration: none;
+    color: rgb(49, 49, 49);
+}

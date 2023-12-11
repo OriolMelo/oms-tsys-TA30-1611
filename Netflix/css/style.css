@@ -1,0 +1,193 @@
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 100;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2) format('woff2'),
+        url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff) format('woff')
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+}
+
+body{
+    background-color: rgb(32, 32, 32);
+    margin: 0;
+    font-family: Netflix Sans;
+    color: white;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 0.25fr repeat(5, 1.5fr);
+    grid-template-rows: 0.5fr 0.5fr 0.75fr 0.5fr 0.75fr 0.5fr 0.5fr; 
+    gap: 0px 3px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    ". NavBar NavBar NavBar NavBar NavBar"
+    ". documentales . . . ."
+    ". heroes pulpo sam color hijos"
+    ". Volver-a-ver . . . ."
+    ". RickMorty blacklist LoveDeathRobots desencanto mindhunter"
+    ". maraton maraton . . ."
+    ". extra extra2 extra3 extra4 extra5";
+}
+
+.NavBar{ 
+    grid-area: NavBar; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.heroes{ 
+    grid-area: heroes; 
+    background-image: url("../img/Heroes.jpg");
+    background-size: cover;
+}
+
+.pulpo{ 
+    grid-area: pulpo; 
+    background-image: url("../img/pulpo.jpg");
+    background-size: cover;
+}
+
+.sam{ 
+    grid-area: sam;
+    background-image: url("../img/sam.jpg");
+    background-size: cover;
+}
+
+.color{ 
+    grid-area: color; 
+    background-image: url("../img/color.jpg");
+    background-size: cover;
+}
+
+.hijos{ 
+    grid-area: hijos; 
+    background-color: black;
+    background-image: url("../img/hijos.png");
+    background-size: cover;
+}
+
+.RickMorty{ 
+    grid-area: RickMorty; 
+    background-image: url("../img/rickmorty.jpg");
+    background-size: cover;
+}
+
+.blacklist{ 
+    grid-area: blacklist; 
+    background-image: url("../img/blacklist.jpg");
+    background-size: cover;
+}
+
+.LoveDeathRobots{ 
+    grid-area: LoveDeathRobots; 
+    background-image: url("../img/lovedeathrobots.jpg");
+    background-size: cover;
+}
+
+.desencanto{ 
+    grid-area: desencanto; 
+    background-image: url("../img/desencanto.jpg");
+    background-size: cover;
+}
+
+.mindhunter{ 
+    grid-area: mindhunter; 
+    background-image: url("../img/mindhunter.jpg");
+    background-size: cover;
+}
+
+.extra{ 
+    grid-area: extra; 
+    background-image: url("../img/sam.jpg");
+    background-size: cover;
+}
+
+.extra2{ 
+    grid-area: extra2; 
+    background-image: url("../img/mindhunter.jpg");
+    background-size: cover;
+}
+
+.extra3{ 
+    grid-area: extra3; 
+    background-color: black;
+    background-image: url("../img/hijos.png");
+    background-size: cover;
+}
+
+.extra4{ 
+    grid-area: extra4; 
+    background-image: url("../img/pulpo.jpg");
+    background-size: cover;
+}
+
+.extra5{ 
+    grid-area: extra5; 
+    background-image: url("../img/blacklist.jpg");
+    background-size: cover;
+}
+
+.documentales{ 
+    grid-area: documentales; 
+    font-size: xx-large;
+    padding-top: 70px;
+}
+
+.Volver-a-ver{ 
+    grid-area: Volver-a-ver; 
+    font-size: xx-large;
+    padding-top: 70px;
+}  
+
+.maraton{
+    grid-area: maraton; 
+    font-size: xx-large;
+    padding-top: 70px;
+}
+
+img{
+    width: 15%;
+}
+
+#info{
+    display: flex;
+    align-items: center;
+}
+
+#usuario{
+    display: flex;
+    justify-content: right;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+li{
+    float: left;
+    padding-right: 16px;
+    font-size: 15px;
+    vertical-align: middle;
+}
+
+.link_lista{
+    margin: 0px 5px;
+    text-decoration: none;
+    color: white;
+}
